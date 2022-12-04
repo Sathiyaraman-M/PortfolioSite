@@ -5,7 +5,7 @@ import Portfolio from "./sections/Portfolio";
 import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Modals from "./components/Modals";
-import Contacts from "./sections/Contacts";
+import Expertise from "./sections/Expertise";
 
 const App = () => {
     return (
@@ -14,7 +14,7 @@ const App = () => {
             <Masthead />
             <Portfolio />
             <About />
-            <Contacts />
+            <Expertise />
             <Footer />
             <Modals />
         </div>
