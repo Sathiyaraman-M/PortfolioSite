@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PortfolioModal = ({id, title, content, image}) => (
+const PortfolioModal = ({id, title, content, image, link}) => (
     <div className="portfolio-modal modal fade" id={id} tabIndex="-1" aria-labelledby={id}
          aria-hidden="true">
         <div className="modal-dialog modal-xl">
@@ -20,10 +20,16 @@ const PortfolioModal = ({id, title, content, image}) => (
                                 </div>
                                 <img className="img-fluid rounded mb-5" src={image} alt="..."/>
                                 <p className="mb-4">{content}</p>
-                                <button className="btn btn-primary" data-bs-dismiss="modal">
-                                    <i className="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
+                                <div className="d-flex justify-content-center" >
+                                    <a href={link} className="btn btn-primary mx-1" target="_blank" rel="noreferrer">
+                                        <i className="fas fa-fw fa-brands fa-github"></i>
+                                        Open in GitHub
+                                    </a>
+                                    <button className="btn btn-primary mx-1" data-bs-dismiss="modal">
+                                        <i className="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

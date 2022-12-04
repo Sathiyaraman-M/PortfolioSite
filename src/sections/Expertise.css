@@ -1,0 +1,13 @@
+.expertise-img {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-clip: border-box;
+    border: 0.125rem solid rgba(0, 0, 0, 0.0625);
+    border-radius: 0.5rem;
+    width: 150px;
+    height: 150px;
+}
+
+.expertise-card-body {
+    background: transparent;
+}
