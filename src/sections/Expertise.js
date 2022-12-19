@@ -1,7 +1,7 @@
 import React from 'react';
 
-import aspnetcoreapi from '../assets/expertise/aspnetcore.jpg';
-import aspnetcoremvc from '../assets/expertise/aspnetcore-mvc.png';
+import aspnet_core_api from '../assets/expertise/aspnetcore.jpg';
+import aspnet_core_mvc from '../assets/expertise/aspnetcore-mvc.png';
 import blazor from '../assets/expertise/blazor.png';
 import bootstrap from '../assets/expertise/bootstrap.png';
 import docker from '../assets/expertise/docker.png'
@@ -22,8 +22,8 @@ const Expertise = () => {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body expertise-card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
                                     <img src={blazor} className="expertise-img" alt="blazor" />
                                     <h4 className="text-center">Blazor</h4>
@@ -32,28 +32,28 @@ const Expertise = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body expertise-card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
-                                    <img src={aspnetcoreapi} className="expertise-img" alt="aspnetcore-api" />
+                                    <img src={aspnet_core_api} className="expertise-img" alt="aspnet-core-api" />
                                     <h4 className="text-center">ASP.NET Core API</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
-                                    <img src={aspnetcoremvc} className="expertise-img" alt="aspnetcore-mvc" />
+                                    <img src={aspnet_core_mvc} className="expertise-img" alt="aspnet-core-mvc" />
                                     <h4 className="text-center">ASP.NET Core MVC</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
                                     <img src={bootstrap} className="expertise-img" alt="bootstrap" />
                                     <h4 className="text-center">Bootstrap</h4>
@@ -62,8 +62,8 @@ const Expertise = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
                                     <img src={docker} className="expertise-img" alt="docker" />
                                     <h4 className="text-center">Docker</h4>
@@ -72,8 +72,8 @@ const Expertise = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
                                     <img src={blazor} className="expertise-img" alt="windows-forms" />
                                     <h4 className="text-center">Windows Forms</h4>
@@ -82,8 +82,8 @@ const Expertise = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
                                     <img src={sqlserver} className="expertise-img" alt="sqlserver" />
                                     <h4 className="text-center">SQL Server</h4>
@@ -92,8 +92,8 @@ const Expertise = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-xl-3 mb-4">
-                        <div className="card">
-                            <div className="card-body d-flex justify-content-center">
+                        <div className="expertise-card">
+                            <div className="expertise-card-body">
                                 <div className="d-flex flex-column align-items-center">
                                     <img src={mysql} className="expertise-img" alt="mysql" />
                                     <h4 className="text-center">MySQL</h4>

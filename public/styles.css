@@ -4516,7 +4516,6 @@ textarea.form-control-lg {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 0.125rem solid rgba(0, 0, 0, 0.125);
     border-radius: 0.5rem;
 }
 .card > hr {
@@ -11474,6 +11473,7 @@ html {
     opacity: 0;
     background-color: rgba(26, 188, 156, 0.9);
 }
+
 .portfolio .portfolio-item .portfolio-item-caption:hover {
     opacity: 1;
 }
@@ -11495,6 +11495,26 @@ html {
         font-size: 3rem;
         line-height: 2.5rem;
     }
+}
+
+.expertise-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.expertise-card-body {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+    border: 0.125rem solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+}
+
+.expertise-card-body:hover {
+    transform: scale(1.1);
 }
 
 .footer {
