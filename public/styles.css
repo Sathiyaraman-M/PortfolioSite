@@ -5560,13 +5560,13 @@ textarea.form-control-lg {
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 0.25rem 0.25rem;
     border-bottom: 0.125rem solid #dee2e6;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
 }
 .modal-header .btn-close {
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
     margin: -0.5rem -0.5rem -0.5rem auto;
 }
 
@@ -5617,7 +5617,7 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
     .modal-lg,
     .modal-xl {
-        max-width: 800px;
+        max-width: 900px;
     }
 }
 @media (min-width: 1200px) {
@@ -11429,6 +11429,12 @@ html {
     color: #6c757d;
 }
 
+.resume-button {
+    border-radius: 50rem !important;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 .masthead {
     padding-top: calc(6rem + 74px);
     padding-bottom: 6rem;
@@ -11515,6 +11521,16 @@ html {
 
 .expertise-card-body:hover {
     transform: scale(1.1);
+}
+
+.expertise-img {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-clip: border-box;
+    border: 0.125rem solid rgba(0, 0, 0, 0.0625);
+    border-radius: 0.5rem;
+    width: 150px;
+    height: 150px;
 }
 
 .footer {
