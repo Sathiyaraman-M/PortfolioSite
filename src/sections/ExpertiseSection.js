@@ -10,10 +10,10 @@ const ExpertiseSection = ({title, content, setBgColor}) => {
                     <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
                     <div className="divider-custom-line"></div>
                 </div>
-                <div className="row justify-content-center">
+                <div className="row row-cols-auto row-cols-md-3 row-cols-lg-5 g-4 justify-content-center">
                     {content.map((item) => {
                         return (
-                            <div className={`col-lg-3 col-xl-3 mb-4 ${setBgColor ? "text-white" : ""}`}>
+                            <div className={`col ${setBgColor ? "text-white" : ""}`}>
                                 {item}
                             </div>
                         )

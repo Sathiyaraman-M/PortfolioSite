@@ -11531,6 +11531,8 @@ html {
     border-radius: 0.5rem;
     width: 150px;
     height: 150px;
+    background: #fff;
+    object-fit: contain;
 }
 
 .footer {
