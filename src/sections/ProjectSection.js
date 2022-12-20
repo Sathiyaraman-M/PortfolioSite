@@ -6,15 +6,9 @@ import game from '../assets/portfolio/game.png'
 import safe from '../assets/portfolio/safe.png'
 import submarine from '../assets/portfolio/submarine.png'
 
-const Portfolio = () => (
-    <section className="page-section portfolio" id="portfolio">
+const ProjectSection = () => (
+    <section className="page-section portfolio">
         <div className="container">
-            <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-            <div className="divider-custom">
-                <div className="divider-custom-line"></div>
-                <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
-                <div className="divider-custom-line"></div>
-            </div>
             <div className="row justify-content-center">
                 <div className="col-md-6 col-lg-4 mb-5">
                     <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#sports-store">
@@ -141,4 +135,4 @@ const Portfolio = () => (
     </section>
 );
 
-export default Portfolio;
+export default ProjectSection;
