@@ -13,6 +13,9 @@ const About = () => (
                 <div className="col-lg-4 ms-auto"><p className="lead">My name is Sathiyaraman M and I'm a Computer Science Engineering student. I'm from India, living in Chennai and currently pursuing Computer Science and Engineering in RMK Engineering College, Tamil Nadu, India.</p></div>
                 <div className="col-lg-4 me-auto"><p className="lead">A great .NET enthusiast myself, I spend most of my time doing projects with ASP.NET Core and Blazor as I am intending to get into Full-Stack Web Development. Just recently, began exploring the JavaScript ecosystem.</p></div>
             </div>
+            <div className="d-flex justify-content-center mt-5">
+                <button className="btn btn-primary resume-button btn-lg py-4 px-5">See my Resume</button>
+            </div>
         </div>
     </section>
 );
