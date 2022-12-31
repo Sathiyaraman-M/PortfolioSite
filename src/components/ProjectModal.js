@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectModal = ({id, title, content, image, link}) => (
+const ProjectModal = ({id, title, content, image, githubLink = '#', demoLink = '#'}) => (
     <div className="portfolio-modal modal fade" id={id} tabIndex="-1" aria-labelledby={id}
          aria-hidden="true">
         <div className="modal-dialog modal-lg">
@@ -17,15 +17,23 @@ const ProjectModal = ({id, title, content, image, link}) => (
                                 <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
                                 <div className="divider-custom-line"></div>
                             </div>
-                            <img className="rounded mb-3" style={{height: '200px', objectFit: 'contain',width:'auto !important'}} src={image} alt="..."/>
+                            <img className="rounded mb-3" style={{height: '300px', objectFit: 'contain',width:'auto !important'}} src={image} alt="..."/>
                             <p className="mb-3">{content}</p>
                             <div className="d-flex justify-content-center" >
-                                <a href={link} className="btn btn-primary mx-1" target="_blank" rel="noreferrer">
-                                    <i className="fas fa-fw fa-brands fa-github"></i>
-                                    Open in GitHub
-                                </a>
-                                <button className="btn btn-primary mx-1" data-bs-dismiss="modal">
-                                    <i className="fas fa-xmark fa-fw"></i>
+                                {githubLink !== '#' &&
+                                    <a href={githubLink} className="btn btn-primary mx-1 align-items-center" target="_blank" rel="noreferrer">
+                                        <i className="fas fa-fw fa-brands fa-github me-1"></i>
+                                        Open in GitHub
+                                    </a>
+                                }
+                                {demoLink !== '#' &&
+                                    <a href={demoLink} className="btn btn-primary mx-1 align-items-center" target="_blank" rel="noreferrer">
+                                        <i className="fas fa-fw fa-up-right-from-square me-1"></i>
+                                        Open Demo
+                                    </a>
+                                }
+                                <button className="btn btn-secondary mx-1 align-items-center" data-bs-dismiss="modal">
+                                    <i className="fas fa-xmark fa-fw me-1"></i>
                                     Close Window
                                 </button>
                             </div>
